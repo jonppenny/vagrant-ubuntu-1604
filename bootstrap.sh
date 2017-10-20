@@ -13,6 +13,11 @@ update_go() {
     apt-get -y upgrade
 }
 
+apps_go() {
+    apt-get update
+    apt-get -y install htop
+}
+
 apache_go() {
     # Install Apache
     apt-get -y install apache2
@@ -95,6 +100,7 @@ EOD
 	exit
     fi
 
+    apps_go
     apache_go
     php_go
     mysql_go
