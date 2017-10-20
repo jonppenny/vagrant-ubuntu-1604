@@ -67,13 +67,13 @@ mysql_go() {
     echo "GRANT PROXY ON ''@'' TO 'root'@'%' WITH GRANT OPTION" | mysql -u root --password=root
 
     # Create database
-    echo "create database wordpress" | mysql -u root --password=root
+    echo "create database vagrant" | mysql -u root --password=root
 
     # Create user
-    echo "create user 'wordpress'@'localhost' identified by 'password'" | mysql -u root --password=root
+    echo "create user 'vagrant'@'localhost' identified by 'password'" | mysql -u root --password=root
 
     # Grant privileges
-    echo "grant all privileges on wordpress.* to 'wordpress'@'localhost'" | mysql -u root --password=root
+    echo "grant all privileges on vagrant.* to 'vagrant'@'localhost'" | mysql -u root --password=root
 
     # Flush
     echo "flush privileges" | mysql -u root --password=root
