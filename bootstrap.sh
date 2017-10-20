@@ -50,7 +50,7 @@ EOF
 
 php_go() {
     sudo apt-get -y update
-    sudo apt-get -y install php php-common php-curl php-xml php-zip php-gd php-mysql php-mbstring php-mcrypt
+    sudo apt-get -y install php php-common php-curl php-xml php-zip php-gd php-mysql php-mbstring php-mcrypt libapache2-mod-php
     service apache2 reload
 }
 
