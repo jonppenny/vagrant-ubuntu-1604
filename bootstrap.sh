@@ -49,10 +49,8 @@ EOF
 }
 
 php_go() {
-    sudo add-apt-repository -y ppa:ondrej/php
     sudo apt-get -y update
-    sudo apt-get -y install php7.1 php7.1-common
-    sudo apt-get -y install php7.1-curl php7.1-xml php7.1-zip php7.1-gd php7.1-mysql php7.1-mbstring php7.1-mcrypt
+    sudo apt-get -y install php php-common php-curl php-xml php-zip php-gd php-mysql php-mbstring php-mcrypt
     service apache2 reload
 }
 
